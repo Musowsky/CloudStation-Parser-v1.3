@@ -1,0 +1,45 @@
+<html><head><title>CloudStation Parser (Version 1.3)</title></head><body><br><br><center><img src="python_logo.gif"><br><br><hr width="90%"><h2>CloudStation Parser Help Manual</h2></center><br /><div id="navigation">
+<left><b><font size="5">Introduction</font></b></left><br />
+<left><font size="4">This document relates to the CloudStation Parser application (version 1.3). </font></left><br /><br>
+
+<left><b><font size="5">Purpose of the Application</font></b></left><br />
+<left><font size="4">The application is designed to extract the contents of the CloudStation directory structure contained within a Windows 7 operating system.  The application can either point directly at the directory in its original location or this can be copied to another location for the application to extract.  The directory is located under ‘C:\users\*user*\AppData\Local\CloudStation’.</p>  
+
+
+<left><b><font size="5">Requirements</font></b></left><br />
+<left><font size="4">The application requires the installation of the Python programming language (versions 3.1 to 3.4)  with administrator privileges.  It has been tested using Windows XP, Windows Vista, Windows 7, Windows 8 and Windows Server 2012.
+</font></left><br /><br>
+<left><b><font size="5">The GUI</font></b></left><br />
+<left><font size="4">The ‘Case Information’ is an option for the investigator to input case information regarding the particular extraction.  This information is not mandatory, and if not entered the sections in the output reports will remain empty.
+The ‘Other Information’ provides access to this help manual through the Interface.  It also provides accesses to the Log File to diagnose problems encountered during extraction.
+The ‘File Information’ section is mandatory as the user must provide the location of the source directory (CloudStation directory) and the output directory.  If these are not added the application will not execute and a warning message will be displayed.
+When the application has completed, the four main databases will be listed on screen with a symbol clearly demonstrating if the extraction was successful.
+Once the required information has been entered the application can be executed by selecting the ‘Begin Extraction’ button.  Once complete the application should be closed using the ‘Close’ button.  </p>  
+
+<left><b><font size="5">Times & Dates</font></b></left><br />
+<left><font size="4">The times & dates shown in the report are in Universal Coordinated Time (UTC).
+</font></left><br /><br>
+
+
+<left><b><font size="5">Missing Sessions</font></b></left><br />
+<left><font size="4">If the quantity of extracted data from the event-db.sqlite databases (3 files per session) does not match the information
+within the 'CloudStation Report.html' this indicates that sessions have been deleted by the user but the information is still recoverable.
+</font></left><br /><br>
+
+
+
+<left><b><font size="5">Output Files</font></b></left><br />
+
+<p><b>CloudStation Report.html </b>-- This contains the information from the sys.sqlite database.  It identifies the names of the synchronized directories along with specific details such as IP address, username and computer name.<br />
+
+<p><b>History Table.html </b>-- This records the last files (up to 50) that where synchronized, modified or deleted within a particular session.  The ‘Session ID’ number identifies the DiskStation and user information detailed in the ‘CloudStation Report.html’.  The table has been ordered by the 'id' column.<br />
+
+<p><b>Filter Exclusion Settings.html </b>-- This identifies the file exclusion settings contained within the filter.sqlite database.  It lists the file extensions and file sizes which would prevent files from being synchronized.  The ‘Session ID’ number identifies which session the particular settings apply to.<br />
+
+<p><b>Synchronized Files – Session # </b>-- This records the files which successfully synchronized between the two directories.  In contrast to the previous three documents, this relates to a specific session which is referenced in the title of the document and within the document itself.<br />
+
+<p><b>Filtered Files – Session # </b>-- This records the files which a user attempted to synchronize between the two directories, which due to their file size or file extension were filtered out.  As with the File Information document, the entire document relates to a particular session which is also clearly stated in the title and within the document itself.<br />
+
+<p><b>Recycled Files – Session # </b>-- This records the files which were deleted within the DiskStation (not the local computer).  As with the previous two documents this is per session.<br />
+
+</div></div></div></body></html>

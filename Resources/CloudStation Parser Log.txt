@@ -1,0 +1,19 @@
+2015-07-22 21:40:04 - INFO - --- Start of new log entry ---
+2015-07-22 21:40:04 - INFO - Script framework has initiated.
+2015-07-22 21:41:00 - INFO - Help file opened.
+2015-07-22 21:41:07 - INFO - Log File Opened.
+2015-07-22 21:41:19 - INFO - Source directory chosen as C:/Users/Jason/Desktop/CloudStation Test Directory.
+2015-07-22 21:41:26 - INFO - Destination directory chosen as C:/Users/Jason/Desktop/output.
+2015-07-22 21:41:33 - INFO - Sys DB script executed at script level.
+2015-07-22 21:41:33 - INFO - Connection to the sys.sqlite database successful.
+2015-07-22 21:41:33 - INFO - Sys.sqlite identified and read.
+2015-07-22 21:41:33 - INFO - Filter DB script executed at script level.
+2015-07-22 21:41:33 - INFO - Connection to filter.sqlite database successful.
+2015-07-22 21:41:34 - INFO - Filter.sqlite database identified and read.
+2015-07-22 21:41:34 - INFO - History DB script executed at script level.
+2015-07-22 21:41:34 - INFO - Connection to history.sqlite database successful.
+2015-07-22 21:41:34 - INFO - History.database identified and read.
+2015-07-22 21:41:34 - INFO - Event DB script executed at script level.
+2015-07-22 21:41:34 - INFO - Event.sqlite database identified and read.
+2015-07-23 15:54:40 - INFO - --- Start of new log entry ---
+2015-07-23 15:54:40 - INFO - Script framework has initiated.
